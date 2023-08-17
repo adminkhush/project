@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup sorm</title>
+    <style>
+.card-container{
+    height: auto;
+    
+}
+.card{
+
+border: 1px solid rgb(188, 170, 170);
+box-shadow: 2px 2px 4px 4px rgb(169, 165, 165);
+background-color: antiquewhite;
+transition: all 0.2s;
+height: auto;
+
+margin: 10px 20px;
+}
+.card:hover{
+    
+    border: 4px;
+    
+
+}
+.signup-card{
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-header{
+    
+    
+line-height: 30px;
+    background-color: rgb(179, 177, 177);
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+.form-card-container{
+width: 25%;
+margin: 10px;
+float: left;
+}
+.form-label{
+    width: 70%;
+    float: left;
+    margin-bottom: 10px;
+    line-height: 30px;
+    margin-top: 10px;
+    border: 1px solid rgb(108, 108, 247);
+    box-shadow: 0px 0px 1px 1px rgb(108, 108, 247);
+    transition: box-shadow .2s;
+    border-radius: 3px;
+
+}
+.form-label:focus{
+    box-shadow: 0px 0px 1px 1px rgb(108, 108, 247);
+}
+.card .footer{
+margin-top: 40px;
+margin-right: 20px;
+    text-align: center;
+
+    color: white;
+    line-height: 20px;
+    
+    
+}
+.card .footer .btn{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 1px 2px #8c8989;
+    background-color: rgb(91, 91, 213);
+    color: white;
+transition: all 0.3s;
+
+
+}
+.card .footer .btn:hover{
+    background-color:rgb(91, 91, 213) ;
+    box-shadow: 1px 1px 2px 2px #cec7c7;
+    cursor: pointer;
+
+}
+.card .footer .reset-button{
+    background-color: rgb(238, 115, 115);
+}
+    </style>
+</head>
+<body>
+    <form >
+    <div class="card-container">
+        <div class="card signup-card">
+           <div class="card-header">
+               Sign up
+           </div>
+           <div class="form-card-container"> <label>Email:</label></div>
+           <input type="email" class="form-label" required="required">
+           <div class="form-card-container">
+            <label>Password:</label>
+            </div>
+           <input type="password" class="form-label">
+           <div class="form-card-container">
+            <label>city:</label>
+            </div>
+           <input type="text" class="form-label">
+           <div class="form-card-container">
+            <label>Date:</label>
+            </div>
+           <input type="date" class="form-label">
+           
+           <div class="form-card-container">
+            <label>Date and time:</label>
+            </div>
+           <input type="datetime-local" class="form-label">
+          
+           <div class="form-card-container">
+            <label>Profile picture:</label>
+            </div>
+           <input type="file" class="form-label">
+           <div class="form-card-container">
+            <label>picture url:</label>
+            </div>
+           <input type="url" class="form-label">
+           <div class="form-card-container">
+            <label>No. of working of expirence:</label>
+            </div>
+           <input type="number" class="form-label">
+          
+        
+         <div class="footer"><button class="btn">Submit</button>
+        <input type="reset" class="btn reset-button"> </div>
+        
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            text-align: center;
+            font: 35px;
+            color: black;
+            background-color: rgb(146, 138, 138);
+        }
+        nav{
+            background-color: rgb(241, 152, 152);
+            padding: 10px;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li a:link,nav ul li a:visited{
+            text-decoration: none;
+            margin: 10px;
+display: inline-block;
+transition: background-color 0.3s;
+        }
+        nav ul li a:hover{
+             background-color: rgb(114, 126, 126);
+        }
+        .container{
+            display: flex;
+            min-height: 70vh;
+        }
+        aside{
+            background-color: rgb(161, 154, 154);
+            padding: 10px;
+        }
+        aside ul{
+            list-style-type: none;
+        }
+        aside ul li a:link,nav ul li a:visited{
+            text-decoration: none;
+            margin: 10px;
+display: inline-block;
+transition: background-color 0.3s;
+        }
+        aside ul li a:hover{
+             background-color: aqua;
+        }
+        main{
+            display: flex;
+        }
+        footer{
+text-align: center;
+background-color: gray;
+color: black;
+font-size: 1.1em;
+padding: 10px;
+margin: 0px;
+        }
+        .box{
+            flex: 1;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        @media only screen and (max-width:768px){
+            nav ul li a:link{
+                width: 100%;
+            }  
+            nav ul{
+                flex-direction: column;
+            }
+            .container{
+                flex-direction: column;
+            }
+            main{
+                flex-direction: column;
+            }
+        }
+        @media only screen and (min-width:769px){
+            aside{
+              flex: 2;
+              padding: 5px;
+            }
+            main{
+                flex: 10;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Flex layout</header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+
+<aside><h4>cities</h4><hr>
+     <ul>
+    <li><a href="#">product</a></li>
+    <li><a href="#">product</a></li>
+    <li><a href="#">product</a></li>
+</ul></aside>
+<main>
+    <div class="box box1"><h4>box1</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, commodi.</p></div>
+    <div class=" box box2"><h4>box2</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, commodi.</p></div>
+    <div class=" box box3"><h4>box3</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, commodi.</p></div>
+
+</main>
+
+    </div>
+    <footer>footer</footer>
+</body>
+</html>

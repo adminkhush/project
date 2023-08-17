@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style>
+
+.body{
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(29, 28, 28);
+    color: antiquewhite;
+    
+}
+.sidebar>h2{
+    margin-left: 20px;
+    border-bottom: 2px solid rgb(212, 205, 205);
+  /* margin: 20px;
+   margin-top: 40px;
+   padding-top: 20px;*/
+   padding-bottom: 20px;
+}
+ .side-menu ,.submenu{
+list-style-type: none;
+/*margin-top: 20px;*/
+} 
+/*.sidebar .side-menu>li ,.sidebar .submenu>ul>li{
+    margin-top: 10px;
+}*/
+/*.sidebar .side-menu>li>a,.sidebar .submenu>ul>li>a{
+    margin: 20px;
+    padding-top: 20px;
+
+    margin-top: 10px;
+
+    
+}*/
+.sidebar .side-menu>li>a>i ,.sidebar .submenu>ul>li>a>i{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.sidebar .side-menu>li>a:link,.sidebar .side-menu>li>a:visited,.sidebar .submenu>ul>li>a:link,.sidebar .submenu >ul>li>a:visited{
+    text-decoration: none;
+    
+    font-size: 20px;
+    color: azure;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    
+}
+.sidebar .side-menu>li>a:hover,.sidebar .submenu>ul>li>a:hover{
+   background-color: aquamarine;
+   color: black; 
+   border-left: 3px solid aquamarine;
+
+}
+.sidebar .submenu>ul{
+    list-style-type: none;
+    display: none;
+}
+.indicator{
+    float: right;
+    line-height: 30px;
+    transition: all 0.2s;
+}
+.reverse{
+transform: rotate(180deg);
+}
+    </style>
+</head>
+<body>
+   
+        <div class="sidebar">
+            <h2>sidebar style</h2>
+            <ul class="side-menu">
+                <li>
+                    <a href="#"><i class=" fa fa-qrcode"></i> Dashbourd</a> 
+                        
+                 </li>
+                 <li  class="submenu">
+                     <a href="#"><i class=" fa fa-link"></i> Product <i class="fa fa-chevron-circle-down indicator"></i></a>
+                     <ul>
+                        <li>
+                            <a href="#"><i class=" fa fa-shopping-bag"></i>Electronic</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class=" fa fa-shopping-bag"></i>Appliance</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class=" fa fa-shopping-bag"></i>Fashion</a>
+                        </li>
+                    </ul>
+
+                 </li>
+                 <li>
+                     <a href="#"><i class=" fa fa-calendar"></i> Events</a>
+                 </li>
+                 <li>
+                     <a href="#"><i class=" fa fa-gear"></i> Services</a>
+                 </li>
+                 <li>
+                     <a href="#"><i class="fa fa-user"></i> About</a>
+                 </li>
+                 <li>
+                     <a href="#"><i class=" fa fa-phone"></i> Contact</a>
+                 </li>
+             
+            </ul>
+        </div>
+    <script>
+        $(".submenu a").click((event)=>
+        {
+            $(event.target).parent().find("ul").slideToggle();
+            $(event.target).parent().find(".indicator").toggleClass("reverse");
+})
+    </script>
+</body>
+</html>

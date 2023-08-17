@@ -1,0 +1,315 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    background-image: linear-gradient(to right, rgb(230, 104, 104),rgb(24, 231, 231), rgb(234, 104, 219));
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(237, 233, 233);
+    padding: 10px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  
+
+}
+nav .flex-left{
+    float: left;
+}
+nav .flex-right{
+    float: right;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a:link,nav ul li a:visited{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+display: inline-block;
+transition: background-color 0.3s;
+}
+nav ul li a:hover{
+     background-color:rgb(168, 166, 166);
+     border: 1px solid rgb(168, 166, 166);
+     border-radius: 20px;
+     padding: 5px;
+
+}
+.container{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    background-color: rgb(204, 202, 202);
+    opacity: 0.7;
+    min-height: 30vh;
+    min-width: 30vh;
+    text-align: center;
+    padding-top:200px;
+    transition: all 0.3s;
+    
+    
+}
+.container:hover{
+    background-color:rgb(155, 152, 152) ;
+    opacity: 0.9;
+
+}
+.container h1 {
+    color: rgb(38, 37, 37);
+    font-weight: bolder;
+    
+    
+
+}
+.container p{
+color: rgb(38, 37, 37);
+
+}
+.container .btn{
+    margin-bottom: 50px;
+}
+.container .btn-1{
+border: 1px solid black;
+width: 150px;
+height: 50px;
+cursor: pointer;
+box-shadow: 1px 1px 2px 2px gray;
+border-radius: 10px;
+
+background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(161, 151, 151), rgb(169, 141, 141));
+margin-top: 30px;
+transition: all 0.3s;
+
+
+}
+.container .btn-1 a{
+font-size: 22px;
+color: white;
+font-weight: bold;
+text-decoration: none;
+
+}
+.container .btn-2{
+border: 1px solid black;
+width: 150px;
+height: 50px;
+box-shadow: 1px 1px 2px 2px gray;
+border-radius: 10px;
+
+margin-top: 30px;
+margin-left: 20px;
+ cursor: pointer;
+
+background-image: linear-gradient(to right, rgb(63, 62, 62), rgb(161, 151, 151), rgb(169, 141, 141));
+transition: all 0.3s;
+
+}
+.container .btn-2 a{
+font-size: 22px;
+color: white;
+font-weight: bold;
+text-decoration: none;
+
+}
+.container .btn-2:hover{
+width: 152px;
+height: 52px;
+box-shadow:1px 1px 3px 3px gray ;
+}
+.container .btn-1:hover{
+width: 152px;
+height: 52px;
+box-shadow:1px 1px 3px 3px gray ;
+}
+.container-1{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    background-color: rgb(204, 202, 202);
+    background-image: linear-gradient(to right, rgb(136, 175, 238),rgb(24, 231, 231), rgb(245, 220, 128));
+
+    min-height: 30vh;
+    min-width: 30vh;
+    text-align: center;
+    padding-top:200px;
+    transition: all 0.3s;
+   
+}
+
+.menu{
+    background-color: rgb(213, 213, 240);
+    box-sizing: border-box;
+    width: 240px;
+    height: 300px;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 2px rgb(143, 143, 243);
+    border: 2px solid rgb(143, 143, 243);
+    float: left;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    transition:background-color 2s,font-size 2s,transform 2s ;
+}
+.menu:hover{
+    background-color: rgb(233, 233, 107);
+    font-size: 25px;
+    width: 250px;
+    
+
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li a:link,.menu ul li a:visited{
+    text-decoration: none;
+    color: black;
+margin: 10px;
+display: inline-block;
+transition: background-color 0.3s;
+
+}
+.menu ul li a:hover{
+    background-color:rgb(168, 166, 166);
+     border: 1px solid rgb(168, 166, 166);
+     border-radius: 20px;
+     padding: 5px;
+
+}
+@media only screen and (max-width:768px){
+    nav ul li a:link{
+        width: 100%;
+    }  
+    nav .flex-right ul{
+        flex-direction: column;
+    }
+    nav .flex-left{
+        flex-direction: column;
+    }
+    .photo{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:769px){
+   nav .flex-left{
+flex: 6;
+padding-left: 30px;
+   }
+   nav .flex-right{
+    flex: 6;
+    padding-left: 10px;        }
+
+    .menu{
+        flex-direction: column;
+    }
+.photo {
+    float: left;
+   
+}
+footer{
+    width: 100%;
+}
+footer .foot .foot1{
+    width: 100%;
+}
+footer .foot .foot2{
+    width: 100%;
+}
+footer .foot .foot3{
+    width: 100%;
+}
+
+}
+
+ /*styles for photo gallery*/
+ 
+.photo {
+    
+    margin: 60px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    display: flex;
+    box-shadow: 2px 2px 4px 4px gray;
+    border: 1px solid;
+    
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.photo img {
+    border: 3px ridge #7c7b7b;
+    box-shadow: 0px 0px 2px 2px #7c7b7b;
+    width: 200px;
+    height: 200px;
+}
+/* style for footer*/
+footer{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(67, 234, 154) , rgb(33, 183, 213));
+    border: 1px solid;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 60px;
+    
+    }
+    footer:hover{
+        opacity: 0.8;
+    }
+    footer h4{
+        margin-top: 10px;
+        padding: auto;
+    }
+    footer .foot{
+        display: flex;
+        margin-left: 50px;
+    }
+    footer .foot .foot1{
+        width: 30%;
+    }
+    footer .foot .foot2{
+        width: 30%;
+    }
+    footer .foot .foot3{
+        width: 30%;
+    }
+      
+/* blog part*/
+.container-blog{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    background-color: rgb(204, 202, 202);
+    opacity: 0.7;
+    min-height: 30vh;
+    min-width: 30vh;
+    text-align: center;
+    padding-top:50px;
+    transition: all 0.3s;
+    
+    
+}
+  /*card styles*/
+    
+  .card-container{
+    width: 100%;
+    
+    border: 1px solid;
+    padding-bottom: 100px;
+    padding-top: 20px;
+padding: 10px 20px;
+padding-left: 30%;
+overflow: hidden;
+
+}

@@ -1,0 +1,312 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Responcive</title>
+    <style>
+        body {
+  font-family: "Segoe UI";
+  font-size: 22px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* styles for header tag */
+
+/* styles for nav tag */
+nav {
+  
+  padding: 10px;
+  
+            background-color: rgb(163, 154, 154);
+            color: black;
+            border-bottom: 0px solid gray;
+           /* width: 100%;
+            height: 60px;*/
+            box-shadow: 0px 0px 2px 2px gray;
+            transition: all 0.3s;
+        
+}
+nav:hover{
+            box-shadow: 1px 1px 4px 4px gray;
+
+        }
+       
+
+nav ul .brand-name{
+        
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 30px;
+width: 40%;
+transition: all 0.3s;
+       }
+       nav ul .brand-name:hover{
+font-size: 32px;
+       }
+       nav ul .brand-name:hover{
+font-size: 32px;
+       }
+       nav ul .nav-right{
+        
+        width: 60%;
+       list-style-type: none;
+      display: inline-block;
+      
+       }
+       nav ul .nav-right li a{
+        float: left;
+        padding: 5px;
+        
+        color: black;
+        text-decoration: none;
+       }
+     
+       nav ul .nav-right li a:hover{
+        background-color: rgb(158, 249, 158);
+        cursor: pointer;
+          border: 2px solid rgb(59, 243, 59);
+          border-radius: 30px;
+       }
+       nav ul .nav-right .search-container {
+  float: right;
+}
+
+nav ul .nav-right input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+ nav ul .nav-right .search-container button {
+  float: right;
+  padding: 3px 15px;
+  margin-top: 2px;
+  margin-right: 2px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul .nav-right .search-container button:hover {
+  background: #aaa9a9;
+}
+    
+h2{
+        text-align: center;
+       }
+
+aside {
+  
+  padding: 15px;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul li a:link,
+aside ul li a:visited {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+aside ul li a:hover {
+  background-color: #0a5a8f;
+}
+
+/* styles for main tag */
+main {
+  padding: 5px;
+  min-height: 80vh;
+}
+
+.section1,.section2 {
+  padding: 10px;
+  margin: 10px;
+}
+.section2
+    {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        
+    }
+    .box .img1{
+    width: 50%;
+    margin-left: 20px;
+}
+.box .img2{
+    width: 50%;
+    margin-left: 200px;
+}
+
+footer{
+    letter-spacing: 0.5px;
+background-image: linear-gradient(to right, rgb(67, 234, 154) , rgb(33, 183, 213));
+border: 1px solid;
+box-sizing: border-box;
+text-align: center;
+
+
+}
+footer .foot{
+    display: flex;
+    margin-left: 50px;
+}
+footer .foot .foot1{
+    width: 30%;
+}
+footer .foot .foot2{
+    width: 30%;
+}
+footer .foot .foot3{
+    width: 30%;
+}
+  
+
+
+/* small devices */
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    width: auto;
+  }
+}
+
+/* large devices */
+@media only screen and (min-width: 769px) {
+  nav ul a {
+    width: auto;
+    float: left;
+  }
+  nav {
+    height: 80px;
+  }
+
+  aside ul a {
+    width: auto;
+    float: left;
+  }
+
+  aside {
+    min-height: 80vh;
+    float: left;
+    width: 30%;
+  }
+
+  main {
+    float: left;
+    width: 70%;
+  }
+
+  section.box {
+    float: left;
+    width: 30%;
+  }
+
+  footer {
+    clear: left;
+  }
+  footer .foot .foot1{
+    width: 100%;
+  }
+  footer .foot .foot2{
+    width: 100%;
+  }
+  footer .foot .foot3{
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li class="brand-name" style="float: left; "> <i class="fa fa-bolt"></i>LESSER</li>
+        <li class="nav-right" >
+            <ul style="list-style-type: none;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                
+            </ul>
+        </li>
+       </ul>
+      </nav>
+
+  <aside>
+    <img src="images/creative-light-bulb-abstract-glowing-blue-background-generative-ai.jpg" alt=" work with creativity" width="400px" height="400px">
+</aside>
+
+  <main>
+    <section class="box">
+        <section class="section1"><img src="images/pexels-antoni-shkraba-4348401.jpg" alt="work place" width="600px" height="300px"> </section>
+
+        
+        <section class="section2">
+            <div class="img1"><img src="images/pexels-julia-avamotive-1076336 (1).jpg" alt=" side by side" width="300px" height="200px"></div>
+            <div class="img2"><img src="images/pexels-julia-avamotive-1076336 (1).jpg" alt="side by side"  width="300px" height="200px"></div>
+        
+        </section>
+   
+  </main>
+
+  <footer>
+    <h4>Our awesome service</h4>
+    <p>Lorem ipsum dolor sit, amet <br>consectetur adipisicing elit. Laborum, rerum.</p>
+<div class="foot">
+   <div class="foot1">
+    <h3><i class="fa fa-heart fa-solid fa-2x  fa-border" style="--fa-border-color: rgb(25, 25, 25); --fa-border-radius:30px;""></i><br>made with love</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati quia iure veniam, accusamus accusantium.</p>
+   </div>
+   <div class="foot2">
+    <h3><i class="fa fa-coins fa-solid fa-2x  fa-border" style="--fa-border-color: rgb(25, 25, 25); --fa-border-radius:30px;"></i><br>Finance support</h3>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati quia iure veniam, accusamus accusantium.</p>
+   
+   </div>
+   <div class="foot3">
+    <h3><i class="fa fa-handshake-angle fa-solid fa-2x  fa-border" style="--fa-border-color: rgb(25, 25, 25); --fa-border-radius:30px;""></i><br>Help and support</h3>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati quia iure veniam, accusamus accusantium.</p>
+   
+   </div>
+</div>
+
+</footer>
+
+</body>
+
+</html>
